@@ -1,0 +1,111 @@
+[ 2016-04-08T15:14:14+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+
+[ 2016-04-08T15:14:58+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+
+[ 2016-04-08T15:15:31+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0573s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0384s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0521s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0214s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0301s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=312 ) [ RunTime:0.0017s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460099731') [ RunTime:0.0017s ]
+SQL: INSERT INTO `market_history_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460099731','现货白银','买','3200','1','委托','3000','3400','22610312') [ RunTime:0.0625s ]
+SQL: INSERT INTO `market_today_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`type`,`freeze_uccupy`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460099731','现货白银','买','3200','1','委托','建仓','2400','3000','3400','22610312') [ RunTime:0.0335s ]
+SQL: INSERT INTO `market_positions_detail` (`freeze_uccupy`,`uid`,`time`,`positions_number`,`type`,`good_name`,`commission`,`direction`,`positions_price`,`number`,`pip`,`loss`,`profit`) VALUES ('2400','22600011','1460099731','22610312','指价','现货白银','0.05','买','3200','1','0','3000','3400') [ RunTime:0.0226s ]
+SQL: UPDATE `market_user_capital` SET `usable_margin`='1056063.4',`freeze_margin`='368178.6' WHERE ( uid=22600011 ) [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `market_user_count` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `market_user_count` WHERE `uid` = 22600011 AND ( `time` >= 1460044800 AND `time` <= 1460131200  ) ORDER BY id desc LIMIT 1   [ RunTime:0.0017s ]
+SQL: INSERT INTO `market_user_count` (`time`,`uid`,`count`) VALUES ('1460099731','22600011','1') [ RunTime:0.0022s ]
+
+[ 2016-04-08T15:21:01+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-04-08T15:21:08+08:00 ] ::1 /market_s22/index.php/Desktop/Index/mairu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+
+[ 2016-04-08T16:35:05+08:00 ] ::1 /market_s22/index.php/Desktop/Index/mairu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+ERR: 系统不支持:Mongo
+
+[ 2016-04-08T16:43:42+08:00 ] ::1 /market_s22/index.php/Desktop/Index/mairu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018876s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+
+[ 2016-04-08T16:56:05+08:00 ] ::1 /market_s22/index.php/Desktop/Index/mairu
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+

@@ -1,0 +1,274 @@
+[ 2016-04-14T15:17:17+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+
+[ 2016-04-14T15:17:41+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-04-14T16:18:19+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0304s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0246s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=320 ) [ RunTime:0.0206s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460621899') [ RunTime:0.0016s ]
+SQL: INSERT INTO `market_history_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460621899','现货白银','买','3200','1','委托','3000','3400','22610320') [ RunTime:0.0290s ]
+SQL: INSERT INTO `market_today_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`type`,`freeze_uccupy`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460621899','现货白银','买','3200','1','委托','建仓','2400','3000','3400','22610320') [ RunTime:0.0340s ]
+SQL: INSERT INTO `market_positions_detail` (`freeze_uccupy`,`uid`,`time`,`positions_number`,`type`,`good_name`,`commission`,`direction`,`positions_price`,`number`,`pip`,`loss`,`profit`) VALUES ('2400','22600011','1460621899','22610320','指价','现货白银','0.05','买','3200','1','0','3000','3400') [ RunTime:0.0488s ]
+SQL: UPDATE `market_user_capital` SET `usable_margin`='1036556.2',`freeze_margin`='387685.8' WHERE ( uid=22600011 ) [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `market_user_count` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `market_user_count` WHERE `uid` = 22600011 AND ( `time` >= 1460563200 AND `time` <= 1460649600  ) ORDER BY id desc LIMIT 1   [ RunTime:0.0019s ]
+SQL: INSERT INTO `market_user_count` (`time`,`uid`,`count`) VALUES ('1460621899','22600011','1') [ RunTime:0.0018s ]
+
+[ 2016-04-14T16:36:33+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0289s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0418s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0305s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0344s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0393s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=321 ) [ RunTime:0.0021s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460622993') [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.081326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.081381s ]
+
+[ 2016-04-14T16:37:02+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0014s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=322 ) [ RunTime:0.0009s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623022') [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_history_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623022','现货白银','买','3200','1','委托','3000','3400','22610322') [ RunTime:0.0231s ]
+SQL: INSERT INTO `market_today_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`type`,`freeze_uccupy`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623022','现货白银','买','3200','1','委托','建仓','2400','3000','3400','22610322') [ RunTime:0.0340s ]
+SQL: INSERT INTO `market_positions_detail` (`freeze_uccupy`,`uid`,`time`,`positions_number`,`type`,`good_name`,`commission`,`direction`,`positions_price`,`number`,`pip`,`loss`,`profit`) VALUES ('2400','22600011','1460623022','22610322','指价','现货白银','0.05','买','3200','1','0','3000','3400') [ RunTime:0.0321s ]
+SQL: UPDATE `market_user_capital` SET `usable_margin`='1034117.8',`freeze_margin`='390124.2' WHERE ( uid=22600011 ) [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `market_user_count` [ RunTime:0.0303s ]
+SQL: SELECT * FROM `market_user_count` WHERE `uid` = 22600011 AND ( `time` >= 1460563200 AND `time` <= 1460649600  ) ORDER BY id desc LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `market_user_count` SET `count`=count+1 WHERE ( id=27 ) [ RunTime:0.0009s ]
+
+[ 2016-04-14T16:37:29+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=323 ) [ RunTime:0.0015s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623049') [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_history_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623049','现货白银','买','3200','1','委托','3000','3400','22610323') [ RunTime:0.0015s ]
+SQL: INSERT INTO `market_today_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`type`,`freeze_uccupy`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623049','现货白银','买','3200','1','委托','建仓','2400','3000','3400','22610323') [ RunTime:0.0013s ]
+SQL: INSERT INTO `market_positions_detail` (`freeze_uccupy`,`uid`,`time`,`positions_number`,`type`,`good_name`,`commission`,`direction`,`positions_price`,`number`,`pip`,`loss`,`profit`) VALUES ('2400','22600011','1460623049','22610323','指价','现货白银','0.05','买','3200','1','0','3000','3400') [ RunTime:0.0014s ]
+SQL: UPDATE `market_user_capital` SET `usable_margin`='1031679.4',`freeze_margin`='392562.6' WHERE ( uid=22600011 ) [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `market_user_count` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `market_user_count` WHERE `uid` = 22600011 AND ( `time` >= 1460563200 AND `time` <= 1460649600  ) ORDER BY id desc LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `market_user_count` SET `count`=count+1 WHERE ( id=27 ) [ RunTime:0.0009s ]
+
+[ 2016-04-14T16:38:03+08:00 ] ::1 /market_s22/index.php/Desktop/Index/createPrice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `market_user_capital` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `market_positions_detail` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `market_today_price` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `market_history_price` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `market_user_capital` WHERE ( uid=22600011 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=324 ) [ RunTime:0.0019s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623083') [ RunTime:0.0016s ]
+SQL: INSERT INTO `market_history_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623083','现货白银','买','3200','1','委托','3000','3400','22610324') [ RunTime:0.0018s ]
+SQL: INSERT INTO `market_today_price` (`uid`,`time`,`good_name`,`direction`,`price`,`number`,`status`,`type`,`freeze_uccupy`,`loss`,`profit`,`positions_number`) VALUES ('22600011','1460623083','现货白银','买','3200','1','委托','建仓','2400','3000','3400','22610324') [ RunTime:0.0019s ]
+SQL: INSERT INTO `market_positions_detail` (`freeze_uccupy`,`uid`,`time`,`positions_number`,`type`,`good_name`,`commission`,`direction`,`positions_price`,`number`,`pip`,`loss`,`profit`) VALUES ('2400','22600011','1460623083','22610324','指价','现货白银','0.05','买','3200','1','0','3000','3400') [ RunTime:0.0017s ]
+SQL: UPDATE `market_user_capital` SET `usable_margin`='1029241',`freeze_margin`='395001' WHERE ( uid=22600011 ) [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 346 行.
+NOTIC: [8] Use of undefined constant n - assumed 'n' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant j - assumed 'j' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+NOTIC: [8] Use of undefined constant Y - assumed 'Y' D:\xampp\htdocs\market_s22\Application\Desktop\Controller\CommonController.class.php 第 347 行.
+SQL: SHOW COLUMNS FROM `market_user_count` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `market_user_count` WHERE `uid` = 22600011 AND ( `time` >= 1460563200 AND `time` <= 1460649600  ) ORDER BY id desc LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `market_user_count` SET `count`=count+1 WHERE ( id=27 ) [ RunTime:0.0019s ]
+
+[ 2016-04-14T16:43:44+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+ERR: 参数错误或者未定义:uid
+
+[ 2016-04-14T16:43:50+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber/uid/226
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `market_positions_number` SET `uid`='226' WHERE ( positions_number=325 ) [ RunTime:0.0019s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623430') [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2016-04-14T16:43:57+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber/uid/22600011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=326 ) [ RunTime:0.0016s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623437') [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2016-04-14T16:44:01+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber/uid/22600011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=327 ) [ RunTime:0.0013s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623441') [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2016-04-14T16:44:02+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber/uid/22600011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0019s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=328 ) [ RunTime:0.0018s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623442') [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-04-14T16:50:17+08:00 ] ::1 /market_s22/index.php/Desktop/Index/positionsNumber/uid/22600011
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `market_positions_number` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `market_positions_number` WHERE `uid` IS NULL LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `market_positions_number` SET `uid`='22600011' WHERE ( positions_number=329 ) [ RunTime:0.0019s ]
+SQL: INSERT INTO `market_positions_number` (`time`) VALUES ('1460623817') [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2016-04-14T18:02:24+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2016-04-14T18:02:36+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+
+[ 2016-04-14T18:02:58+08:00 ] ::1 /market_s22/index.php/Desktop/Index/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setInc() should be compatible with Think\Model::setInc($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Model\MongoModel::setDec() should be compatible with Think\Model::setDec($field, $step = 1, $lazyTime = 0) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Model\MongoModel.class.php 第 17 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::connect() should be compatible with Think\Db\Driver::connect($config = '', $linkNum = 0, $autoConnection = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [2048] Declaration of Think\Db\Driver\Mongo::insertAll() should be compatible with Think\Db\Driver::insertAll($dataSet, $options = Array, $replace = false) D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 18 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\market_s22\ThinkPHP\Library\Think\Db\Driver\Mongo.class.php 第 129 行.
+
